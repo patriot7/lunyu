@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>systems.type-0</groupId>
-    <artifactId>lunyun</artifactId>
+    <artifactId>lunyu</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>

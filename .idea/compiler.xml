@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lunyun" />
+        <module name="lunyu" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="lunyun" target="1.8" />
+      <module name="lunyu" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
