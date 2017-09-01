@@ -9,13 +9,18 @@ public final class Tweet {
 
     public Tweet() {
 
-    };
+    }
+
+    Tweet(String body) {
+        this.date = new Date();
+        this.body = body;
+    }
 
     public ObjectId getId() {
         return id;
     }
 
-    public void setId(ObjectId id) {
+    public void setId(final ObjectId id) {
         this.id = id;
     }
 
@@ -23,7 +28,7 @@ public final class Tweet {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(final Date date) {
         this.date = date;
     }
 
@@ -31,7 +36,7 @@ public final class Tweet {
         return body;
     }
 
-    public void setBody(String body) {
+    public void setBody(final String body) {
         this.body = body;
     }
 }

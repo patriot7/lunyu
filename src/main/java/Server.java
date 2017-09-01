@@ -7,6 +7,9 @@ import com.mongodb.client.MongoDatabase;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;
 
+import java.util.ArrayList;
+
+import static com.mongodb.MongoClient.getDefaultCodecRegistry;
 import static com.mongodb.client.model.Sorts.descending;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
@@ -15,13 +18,22 @@ import static spark.Spark.*;
 public class Server {
     public static void main(String[] args) {
 
-        CodecRegistry pojoCodecRegistry = fromRegistries(MongoClient.getDefaultCodecRegistry(),
-                fromProviders(PojoCodecProvider.builder().automatic(true).build()));
+        CodecRegistry codecRegistry = fromRegistries(
+                getDefaultCodecRegistry(),
+                fromProviders(PojoCodecProvider.builder()
+                        .automatic(true)
+                        .build())
+        );
 
-        MongoClient mongoClient = new MongoClient("localhost", MongoClientOptions.builder().codecRegistry(pojoCodecRegistry).build());
+        MongoClient mongoClient = new MongoClient("localhost", MongoClientOptions.builder().codecRegistry(codecRegistry).build());
+
         MongoDatabase database = mongoClient.getDatabase("lunyu");
 
         MongoCollection<Tweet> tweetCollection = database.getCollection("tweet", Tweet.class);
+
+        tweetCollection.insertOne(new Tweet("java's so complex"));
+
+        Gson gson = new Gson();
 
         //        TODO:
         //        imageCollection
@@ -30,17 +42,20 @@ public class Server {
 
         get("/", (req, res) -> {
             FindIterable<Tweet> test = tweetCollection.find().sort(descending("_id")).limit(50);
-            Gson gson = new Gson();
-            System.out.println((gson.toJson(test)));
-            return gson.toJson(test);
+
+            ArrayList<Tweet> tweetList = new ArrayList<>();
+
+            for (Tweet tweet : test) {
+                tweetList.add(tweet);
+            }
+
+            System.out.println(gson.toJson(tweetList));
+
+            return gson.toJson(tweetList);
         });
 
-        post("/", (req, res) -> {
-            return "NOT IMPLEMENTED";
-        });
+        post("/", (req, res) -> "NOT IMPLEMENTED");
 
-        delete("/", (req, res) -> {
-            return "NOT IMPLEMENTED";
-        });
+        delete("/", (req, res) -> "NOT IMPLEMENTED");
     }
 }
