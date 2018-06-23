@@ -6,10 +6,13 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;
+import org.bson.types.ObjectId;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 import static com.mongodb.MongoClient.getDefaultCodecRegistry;
+import static com.mongodb.client.model.Filters.eq;
 import static com.mongodb.client.model.Sorts.descending;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
@@ -25,6 +28,8 @@ public class Server {
                         .build())
         );
 
+        // TODO: database connection exception
+
         MongoClient mongoClient = new MongoClient("localhost", MongoClientOptions.builder().codecRegistry(codecRegistry).build());
 
         MongoDatabase database = mongoClient.getDatabase("lunyu");
@@ -35,27 +40,32 @@ public class Server {
 
         Gson gson = new Gson();
 
-        //        TODO:
-        //        imageCollection
-        //        ArticleCollection
-        //        videoCollection
-
         get("/", (req, res) -> {
-            FindIterable<Tweet> test = tweetCollection.find().sort(descending("_id")).limit(50);
+            FindIterable<Tweet> tweets = tweetCollection.find().sort(descending("_id")).limit(50);
 
             ArrayList<Tweet> tweetList = new ArrayList<>();
 
-            for (Tweet tweet : test) {
+            for (Tweet tweet : tweets) {
                 tweetList.add(tweet);
             }
-
-            System.out.println(gson.toJson(tweetList));
 
             return gson.toJson(tweetList);
         });
 
-        post("/", (req, res) -> "NOT IMPLEMENTED");
+        post("/", (req, res) -> {
+            Tweet newTweet = gson.fromJson(req.body(), Tweet.class);
+            newTweet.setId(new ObjectId());
+            newTweet.setDate(new Date());
 
-        delete("/", (req, res) -> "NOT IMPLEMENTED");
+            tweetCollection.insertOne(newTweet);
+
+            return gson.toJson(newTweet.getId());
+        });
+
+        delete("/:id", (req, res) -> {
+            Tweet deletedTweet = tweetCollection.findOneAndDelete(eq("_id", req.params(":id")));
+
+            return gson.toJson(deletedTweet);
+        });
     }
 }

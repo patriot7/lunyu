@@ -1,0 +1,62 @@
+<component name="libraryTable">
+  <library name="com.sparkjava:spark-core:2.7.2" type="repository">
+    <properties maven-id="com.sparkjava:spark-core:2.7.2" />
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/spark-core-2.7.2.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/slf4j-api-1.7.13.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-server-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/javax.servlet-api-3.1.0.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-http-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-util-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-io-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-webapp-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-xml-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-servlet-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-security-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-server-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-common-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-client-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-client-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-servlet-9.4.8.v20171121.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-api-9.4.8.v20171121.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/spark-core-2.7.2-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/slf4j-api-1.7.13-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-server-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/javax.servlet-api-3.1.0-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-http-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-util-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-io-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-webapp-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-xml-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-servlet-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-security-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-server-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-common-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-client-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-client-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-servlet-9.4.8.v20171121-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-api-9.4.8.v20171121-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/spark-core-2.7.2-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/slf4j-api-1.7.13-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-server-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/javax.servlet-api-3.1.0-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-http-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-util-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-io-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-webapp-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-xml-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-servlet-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-security-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-server-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-common-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-client-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/jetty-client-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-servlet-9.4.8.v20171121-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/Users/patriot7/.m2/repository/org/eclipse/jetty/jetty-util/9.4.4.v20170414/websocket-api-9.4.8.v20171121-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -12,15 +12,16 @@ public final class Tweet {
     }
 
     Tweet(String body) {
+        this.id = new ObjectId();
         this.date = new Date();
         this.body = body;
     }
 
-    public ObjectId getId() {
+    ObjectId getId() {
         return id;
     }
 
-    public void setId(final ObjectId id) {
+    void setId(final ObjectId id) {
         this.id = id;
     }
 
@@ -28,7 +29,7 @@ public final class Tweet {
         return date;
     }
 
-    public void setDate(final Date date) {
+    void setDate(final Date date) {
         this.date = date;
     }
 
